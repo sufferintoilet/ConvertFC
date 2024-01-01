@@ -2,13 +2,15 @@
 internal class Program 
 {
     private static void Main(string[] args)
-    {
-        Console.WriteLine("Nhap lua chon");
-        int choice = int.Parse(Console.ReadLine());
-        while (choice!=0)
+    {   int choice =-1;
+        while (choice !=0)
         {
-            switch (choice)
-            {
+        Console.WriteLine("Nhap lua chon");
+        choice = int.Parse(Console.ReadLine());
+        switch (choice)
+        {
+            
+            
                 case 1:
                 {
                     //chuyen tu C sang F
@@ -34,6 +36,7 @@ internal class Program
                 break;
             }
         }
+        
     }
     
     static int CelsiusToFahrenheit()
